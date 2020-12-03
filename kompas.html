@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kompas-List Rendering</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.25/vue.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark navbar fixed-top">
+        <img src="https://asset.kompas.com/data/2017/wp/images/logo-kompascom-2017.png" width="150">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu text-white" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+    <div class="d-flex justify-content-center mt-5 ">
+        <div class="card bg-transparent border-dark" style="width: 60rem;">
+          <div class="card-body ">
+            <ul id="example-1">
+                <div v-for="item in items" :key="item.message" >                    
+                    <h2 class="card-title">{{ item.message }}</h2>
+                     <p>{{ item.messages }}</p>                                     
+                </div>       
+                <img src="https://asset.kompas.com/crops/YAt_k9BYbGpV7qJ6TeVJpLG3buw=/283x0:991x472/750x500/data/photo/2020/12/03/5fc82dd55f299.jpg " class="img-fluid" alt="Responsive image">
+            </ul>
+            <ul id="example-2">
+                <div v-for="item in items" :key="item.message" >                                 
+                     <p class="text-muted">{{ item.messa }}</p>
+               
+                     <p>{{ item.message1 }}</p>
+                     <p>{{ item.message2 }}</p>
+                     <p>{{ item.message3 }}</p>
+                     <p>{{ item.message4 }}</p>
+                     <p>{{ item.message5 }}</p>
+                     <p>{{ item.message6 }}</p>
+                     <p>{{ item.message7 }}</p>
+                     <p>{{ item.message8 }}</p>
+                     <h5 class="font-weight-bold">{{ item.message9 }}</h5>
+                     <p>{{ item.message10 }}</p>
+                     <h5 class="font-weight-bold">{{ item.message11 }}</h5>
+                     <p>{{ item.message12 }}</p>
+                     <h5 class="font-weight-bold">{{ item.message13 }}</h5>
+                     <p>{{ item.message14 }}</p>
+                     <h5 class="font-weight-bold">{{ item.message15 }}</h5>
+                     <p>{{ item.message16 }}</p>
+                     <h5 class="font-weight-bold">{{ item.message17 }}</h5>
+                     <p>{{ item.message18 }}</p>
+                     <h5 class="font-weight-bold">{{ item.message19 }}</h5>
+                     <p>{{ item.message20 }}</p>
+                     <h5 class="font-weight-bold">{{ item.message21 }}</h5>
+                     <p>{{ item.message22 }}</p>
+                     <h5 class="font-weight-bold">{{ item.message23 }}</h5>
+                     <p>{{ item.message24 }}</p>
+                     <h5 class="font-weight-bold">{{ item.message25 }}</h5>
+                     <p>{{ item.message26 }}</p>
+                     <h5 class="font-weight-bold">{{ item.message27 }}</h5>
+                     <p>{{ item.message28 }}</p>
+                     <h5 class="font-weight-bold">{{ item.message29 }}</h5>
+                     <p>{{ item.message30 }}</p>
+                     <p>{{ item.message31 }}</p>
+                     <h5 class="font-weight-bold">{{ item.message32 }}</h5>
+                     <p>{{ item.message33 }}</p>  
+                 
+                </div>       
+            </ul>            
+          </div>
+        </div>
+    </div> 
+    <div class="card text-center bg-secondary">
+        <div class="card-header">
+        <img src="https://asset.kompas.com/data/2017/wp/images/logo-kompascom-2017.png" width="150">
+        <h4 class="font-italic text-warning">JERNIH MELIHAT DUNIA</h4>
+        </div>
+        <div class="card-body">
+        <p class="text-light">Penghargaan dan Sertifikat:</p>    
+        <img src="https://asset.kompas.com/data/2017/wp/images/logo-wowbrands-2019.png" width="55">
+        <img src="https://asset.kompas.com/data/2017/wp/images/logo-superbrands-2019.png" width="55">
+        <img src="https://asset.kompas.com/data/2017/wp/images/logo-ifcn-small.png" width="55">         
+        </div>
+        <div class="card-footer text-light">
+          <p>Kabar Palmerah About Us Advertise Policy Pedoman Media Siber Career Contact Us Copyright 2008 - 2020 PT. Kompas Cyber Media (Kompas Gramedia Digital Group). All rights reserved.</p>
+        </div>
+      </div>        
+
+    <script>
+    new Vue({
+        el: '#example-1',
+        data: {
+        items: [
+            { message: 'Rating Pemain Man United Vs PSG, Rapor Merah Fred dan Martial' },
+            { messages: 'Kompas.com - 03/12/2020,07.19 WIB' },
+            { messa: 'Gelandang Manchester United, Fred (kanan), terlibat insiden dengan beberapa pemain PSG. Manchester United harus mengakui keunggulan 1-3 Paris Saint-Germain saat kedua tim bersua di Stadion Old Trafford, Kamis (3/12/2020) dini hari WIB.(AFP/OLI SCARFF)'}
+                       
+            ]
+        }
+    })    
+    new Vue({
+        el: '#example-2',
+        data: {
+        items: [
+            { messa: 'Gelandang Manchester United, Fred (kanan), terlibat insiden dengan beberapa pemain PSG. Manchester United harus mengakui keunggulan 1-3 Paris Saint-Germain saat kedua tim bersua di Stadion Old Trafford, Kamis (3/12/2020) dini hari WIB.(AFP/OLI SCARFF)'},
+            { message1 : 'Penulis Firzie A. Idris | Editor Firzie A. Idris'},
+            { message2: 'KOMPAS.com - Manchester United harus mengakui keunggulan 1-3 Paris Saint-Germain saat kedua tim bersua di Stadion Old Trafford, Kamis (3/12/2020) dini hari WIB.' },
+            { message3: 'Manchester United harus kebobolan lebih dulu lewat gol Neymar ,sebelum Marcus Rashford membalas pada setengah jam pertandingan, tepatnya pada menit ke-32.' },
+            { message4: 'Namun, PSG bisa mencetak dua gol pada babak kedua lewat Marquinhos ,serta Neymar .' },
+            { message5: 'Manchester United juga harus bermain dengan 10 pemain setelah Fred mendapat kartu kuning pada menit ke-70' },
+            { message6: 'Alhasil, Man United kini berbagi 9 poin dengan PSG dan RB Leipzig di Grup H.' },
+            { message7: 'Setan Merah membutuhkan minimal hasil seri saat bertandang ke Leipzig pada matchday terakhir untuk lolos ke babak 16 besar.' },
+            { message8: 'Berikut adalah rating para pemain Manchester United saat menghadapi PSG di Stadion Old Trafford seperti dikutip dari Manchester Evening News:' },
+            { message9: 'David de Gea 7' },
+            { message10: 'Membuat beberapa penyelamatan bagus, terutama dari Alessandro Florenzi dan Mitchel Bakker. Akan tetapi, ia seharusnya bisa lebih baik dalam menghalau gol pembuka Neymar.' },
+            { message11: 'Aaron Wan-Bissaka 6' },
+            { message12: 'Berkontribusi terhadap gol Marcus Rashford. Akan tetapi, ia tidak mendukung serangan seperti biasanya di laga ini.'},
+            { message13: 'Victor Lindelof 5'},
+            { message14: 'Kesulitan sepanjang laga dan hampir tak bisa memulai serangan dalam bentuk apapun.' },
+            { message15: 'Harry Maguire 5' },
+            { message16: 'Lini depan lincah PSG kerap mengeksploitasi kurangnya kecepatan Maguire.' },
+            { message17: 'Alex Telles 6' },
+            { message18: 'Kurang cepat bereaksi untuk gol pertama Neymar tetapi ia berkontribusi baik untuk membantu penyerangan Setan Merah dan waspada dalam bertahan.'},
+            { message19: 'Scoot McTominay 6' },
+            { message20: 'Membuktikan diri dengan penampilan agresif di lini tengah Man United. Tampil baik pada babak kedua.' },
+            { message21: 'Fred 4'},
+            { message22: 'Sangat beruntung tidak dikartu merah setelah menanduk kepala Leandro Paredes pada babak pertama. Namun, kartu kuning yang ia dapat dari insiden tersebut terbukti mahal karen aia lalu diganjar kartu kuning kedua pada babak kedua.' },
+            { message23: 'Marcus Rashford 7' },
+            { message24: 'Tiga gol dalam empat pertemuan lawan PSG walau gol yang ia bukukan pada laga ini terkena pantulan besar. Sayang, ia harus ditarik keluar karena cedera pada babak kedua.' },
+            { message25: 'Bruno Fernandes 6' },
+            { message26: 'Sempat terlibat beberapa manuver depan gawang, termasuk ke Anthony Martial.' },
+            { message27: 'Anthony Martial 4' },
+            { message28: 'Membuang beberapa kesempatan emas saat laga masih 1-1. Menunjukkan kenapa ia dipindah dari posisi striker pucuk.' },
+            { message29: 'Edinson Cavani 6' },
+            { message30: 'Lebih terlibat pada babak kedua dan bekerjasama baik dengan Rashford untuk menciptakan ruang bagi Martial. Melepas satu tembakan chip yang masih mengenai mistar.' },
+            { message31: 'Pemain Pengganti: Paul Pogba 6, Donny van de Beek 6, Mason Greenwood 5, Odigon Ighalo -.' },
+            { message32: 'Pelatih: Ole Gunnar Solskjaer 5 ' },
+            { message33: 'Menurunkan line up menyerang tetapi ia seharusnya menarik keluar Fred pada tengah babak setelah sang gelandang beruntung tidak diusir wasit. Pergantian baru datang saat Man United telah bermain dengan 10 pemain.' }
+            ]
+        }
+    }) 
+      
+    </script>    
+</body>
+</html>
